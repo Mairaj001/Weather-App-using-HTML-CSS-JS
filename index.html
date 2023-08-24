@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Weather app</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="weather_card">
+        <div class="first_section">
+          <input type="text" placeholder="Enter the Location" id="input"/>
+          <div class="serach_icon">
+            <i class="ri-search-line" onclick="fetch_country()"></i>
+          </div>
+        </div>
+
+        <div class="weather">
+          <div class="image_section">
+            <img id="weather_image" src="imgs/rain.png" alt="rain" />
+            <p id="status">cloudy</p>
+          </div>
+          <div class="text_section">
+            <!-- <p id="status">cloudy</p> -->
+            <h1 class="temp">22&deg; C</h1>
+            <h2 class="city">Islamabad</h2>
+          </div>
+        </div>
+
+        <div class="details_section">
+          <div class="humidity_container">
+            <div class="humidity_image">
+              <img src="imgs/humidity.png" />
+            </div>
+            <div class="humdity_text">
+              <span id="humidity_text">50%</span><br>
+              <span id="k">Humidity</span>
+            </div>
+          </div>
+
+          <div class="wind_container">
+            <div class="wind_img">
+              <img src="imgs/wind.png" alt="" />
+            </div>
+
+            <div class="wind_text">
+                <span id="wind">15 km/h</span><br>
+                <span id="k">Wind Speed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
+
+
+
+
+<!-- deda3fb8fb0921427cfb73853d1c3735 --> 
+
+<!-- https://api.openweathermap.org/data/2.5/weather?q=Islamabad&appid=deda3fb8fb0921427cfb73853d1c3735&units=metric -->
