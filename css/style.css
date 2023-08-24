@@ -25,7 +25,7 @@ html,body{
 .weather_card{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 320px;
     height: 90%;
     margin:10px auto 0;
     background: linear-gradient(135deg,#00feba,#5b548a);
@@ -50,6 +50,7 @@ html,body{
     background: #ebfffc;
     color:#555;
     opacity: 0.875;
+    width: 270px;
 }
 
 .serach_icon{
